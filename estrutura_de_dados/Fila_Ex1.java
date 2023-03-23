@@ -50,8 +50,14 @@ public class Fila_Ex1 {
 				break;
 
 			case 3:
-				System.out.println(fila.poll()+"\nO cliente foi chamado!");
-				System.out.println("Fila: "+fila);
+				
+				if(fila.isEmpty()) {
+					System.out.println("\nA fila está vazia!");
+				}else {
+					System.out.println(fila.poll()+"\nO cliente foi chamado!");
+					System.out.println("Fila: "+fila);
+				}
+				
 				break;
 
 			default:

@@ -49,8 +49,13 @@ public class Pilha_Ex1 {
 				break;
 
 			case 3:
-				System.out.println(pilha.pop() + " foi retirado da pilha!");
-				System.out.println("\nPilha: " + pilha);
+				if(pilha.isEmpty()) {
+					System.out.println("\nA pilha está vazia!");
+				}else {
+					System.out.println(pilha.pop() + " foi retirado da pilha!");
+					System.out.println("\nPilha: " + pilha);
+				}
+				
 				break;
 
 			default:
